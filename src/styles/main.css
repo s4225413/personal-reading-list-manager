@@ -1,0 +1,182 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  min-height: calc(100vh - 60px); /* adjust based on navbar height */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ horizontally center */
+  justify-content: flex-start;
+}
+
+html, body {
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #2c3e50;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+}
+
+.navbar-links li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.book-table th, .book-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.book-table select {
+  width: 100%;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+
+.dashboard-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  max-width: 400px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form input {
+  width: 100%;
+  height: 40px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.auth-form button {
+  background-color: #28a745; /* ✅ green */
+  color: white;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.switch-auth {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  background: transparent;
+  border: 1px solid black;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+/* Add Book Page Styling */
+.book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 4rem auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.book-form input,
+.book-form select,
+.book-form textarea {
+  width: 90%;              /* ✅ reduced width */
+  height: 44px;            /* ✅ increased height */
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.book-form textarea {
+  height: 80px;            /* specific height for notes */
+  resize: vertical;
+}
+
+.book-form button {
+  width: 90%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: #28a745; /* ✅ green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-form button:hover {
+  background-color: #218838;
+}
+
+
+.card.to-read { background: #fdf3d4; }
+.card.reading { background: #d0eafc; }
+.card.completed { background: #d4fcd9; }
